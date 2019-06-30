@@ -6,7 +6,7 @@ inside the data the getter returns, the entire page shall be re-rendered. */
 export default {
     getNewData: (state) => {
         console.log(state.newData);
-        return state.testData;
+        return state.newData;
     },
     getLoadingNewData: (state) => {
         return state.loadingNewData;
