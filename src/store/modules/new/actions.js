@@ -10,7 +10,7 @@ export default {
     requestNewData: (context) => {
         if (context.state.newData.length === 0) {
             console.log("request sent!");
-            Vue.http.get('https://jsonplaceholder.typicode.com/posts').then(response => {
+            Vue.http.get('https://jsonplaceholder.typicode.com/photos').then(response => {
                 context.commit("setNewData", response.data.slice(0, 10));
             },
             error => {

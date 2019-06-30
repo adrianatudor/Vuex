@@ -4,7 +4,7 @@
     <b-loading :active.sync="getLoadingNewData"></b-loading>
         <ul>
             <li>
-                <img v-for="(user, index) in getNewData" :src="user.title" :key="index">
+                <img v-for="(user, index) in getNewData" :src="user.url" :key="index">
             </li>
         </ul>
   </div>
