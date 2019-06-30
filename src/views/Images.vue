@@ -12,6 +12,7 @@
 
 <script>
 // @ is an alias to /src
+import { mapGetters, mapActions } from 'vuex' 
 export default {
     name: 'about',
     components: {
